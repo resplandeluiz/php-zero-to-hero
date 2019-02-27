@@ -1,9 +1,0 @@
-Nunca inicie nomeclatura de variáveis com números.
-Nuca utilize espaços em branco no meio do identificadod da variável.
-Nunca utiliza caracteres especiais(! @ # $ % ¨&  * () na nomeclatura das variáveis.
-Evitar criar variáveis com mais de 15 caracteres, prezando a clareza.
-Nome das variáveis devem ter sentido e transmitir a idéia dentro do seu contexto.
-Utiliza preferencialmente, palavras minusculas separadar por " _ " ou a primeira letra maiúscula. ex ($aviao_estado || $aviaoEstado);
-PHP é sensitive case ou seja $caso != $Caso
-Variáveis apontando para o mesmo local da memória " $a = 5;  $b = &$a; $b = 10;  ||  $a = 10 and $b = 10; ||
-Inteiro 0 | Double 0.0 | String "" ou "0" | array vazio | objeto sem elementos | tipo NULL == FALSE
