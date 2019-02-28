@@ -1,6 +1,7 @@
 
 <?php
         echo "<meta charset='utf-8'>";
+        echo '<pre>';
 /* 
 
     Arquivo desenvolvido para realizar consultas e desenvolver minha habilidade em PHP.
@@ -254,13 +255,162 @@
     
    //Manipulação de Array[]  ############################################## PAGE 65
    
+    // Criando um Array[] ##############################################
+    
+    //Forma 1 
+    //$esportes = array('futebol','volei','futvolei','basquete','atletismo');
+ 
+    //Forma 2
+    //$esportes = array(0=>'futebol',1=>'volei',2=>'futvolei',3=>'basquete',4=>'atletismo');
+    
+    //Forma 3
+    //$esportes[] = 'futebol';
+    //$esportes[] = 'volei';
+    //$esportes[] = 'futvolei';
+    //$esportes[] = 'basquete';
+    //$esportes[] = 'atletismo';
     
     
+    //Para acessar um dado específico basta apenas indicar o índice
+    //echo $esportes[0].'</br>';
+    //echo $esportes[1].'</br>';
+    //echo $esportes[2];
     
     
+     // Arrays[] associativos ##############################################
     
-
+    //$esportes = array('futebol'=>'Bola de Futebol','volei'=>'Bola de Volei','basquete'=>'Bola de Basquete');
+    
+    // Acessar um Array associativo ##############################################
+    //echo $esportes[volei];
+     
+     // Iteração array com o foreach ##############################################
+     
+    //foreach($esportes as $esporte => $chave){
+         
+         //echo $esporte.' => '.$chave.'</br>';
+         
+    // }
+     
+     // Acesso aos Array[] ################################################
+     
+     //ATRIBUINDO
+     //$meu_tenis['tamanho'] = 43;
+     //$meu_tenis['cor'] = 'Marrom';
+     
+     //ALTERANDO
+     //$meu_tenis['tamanho'] = 42;
+     //$meu_tenis['cor'] = 'Cinza';
+     
+     //EXIBINDO
+     //echo '</br>';
+     //var_dump($meu_tenis);
+     
+     //ATRIBUINDO
+     //$mochila[] = 'Adidas';
+     //$mochila[] = 'Nike';
+     
+     //ALTERANDO
+     //$mochila[0] = 'Puma';
+     
+     //EXIBINDO
+     //echo '</br>';
+     //var_dump($mochila);
+     
+     
+     // Array Multimensionais ##################################################
+     
+     
+    //Forma 1 - criação - atribuição
+    // $pizzas = array(
+    //     'Portuguesa'=>array('150g de queijo mussarela','50g de presunto','1 tomate em rodelas','1 ovo cozido'),
+    //     'Calabresa'=>array('150g de queijo mussarela','2 gomos de linguiça calabresa','12 azeites verdes','orégano'),
+    // );
+    
+    
    
+    //Forma 2 - criação - atribuição
+    // $pizzas['Portugesa'][0] = '150g de queijo mussarela';
+    // $pizzas['Portugesa'][1] = '50g de presunto';
+    
+    
+    //Forma 3 - criação - atribuição
+    //$pizzas['Portugesa']['Igrediente 1'] = '150g de queijo mussarela';
+    //$pizzas['Portugesa']['Igrediente 2'] = '50g de presunto';
+    
+    //print_r($pizzas);
+
+   // Iteração Array[] com o foreach ##############################################
+     
+    // foreach($pizzas as $pizza => $ingredientes){
+         
+    //      foreach($ingredientes as $igrediente){
+            
+    //         print_r($pizza);
+    //         print_r($ingredientes);
+            
+    //      }
+         
+         
+    // }
+    
+    // Funções com Array[] ##############################################
+    
+    //Adicionar elementos no final do Array[]  ##############################################
+    // $garrafas = array('350ml','600ml','2L','2,5L','3L');
+    // print_r($garrafas);
+    
+    // array_push($garrafas,'5L');
+    // print_r($garrafas);
+    
+    //Remove  elementos no final do Array[]  ##############################################
+    // $garrafas = array('350ml','600ml','2L','2,5L','3L');
+    // array_pop($garrafas);
+    // print_r($garrafas);
+    
+    //Remove  elementos no inicio do Array[]  ##############################################
+    //  $garrafas = array('350ml','600ml','2L','2,5L','3L');
+    //  array_shift($garrafas);
+    //  print_r($garrafas);
+    
+    //Adiciona  elementos no inicio do Array[]  ##############################################
+    // $garrafas = array('350ml','600ml','2L','2,5L','3L');
+    // array_unshift($garrafas,'210ml');
+    // print_r($garrafas);
+    
+    //Preenche o Array[] com um valor, determinada posições você diz quantas posições seu Array[]  ##############################################
+    //ex se você colocar 22 ele vai inserir o valor determinado até fechar as 22 posições ##############################################
+    //$garrafas = array('350ml','600ml','2L','2,5L','3L');
+    //$garrafas = array_pad($garrafas,22,'210ml');
+    //print_r($garrafas);
+    
+    //Retorna o  Array[] invertido             ##############################################
+    //$garrafas = array('350ml','600ml','2L','2,5L','3L');
+    //$garrafas = array_reverse($garrafas);
+    //print_r($garrafas);
+    
+    //Retorna o  Array[] invertido             ##############################################
+    //$garrafas = array('350ml','600ml','2L','2,5L','3L');
+    //$garrafas = array_reverse($garrafas);
+    //print_r($garrafas);
+    
+    //Mescla  Array[]'s             ##############################################
+    //$garrafas = array('350ml','600ml','2L');
+    // $garrafas2 = array('2,5L','3L');
+    // $garrafas_total = array_merge($garrafas,$garrafas2);
+    // print_r($garrafas_total);
+    
+    //Array[]'s  keys  - Retorna as chaves de um array         ##############################################
+    
+    // $pizzas = array(
+    //     'Portuguesa'=>array('150g de queijo mussarela','50g de presunto','1 tomate em rodelas','1 ovo cozido'),
+    //     'Calabresa'=>array('150g de queijo mussarela','2 gomos de linguiça calabresa','12 azeites verdes','orégano'),
+    //  );
+    
+    // $indices = array_keys($pizzas);
+    // print_r($indices);
+    
+    
     
  
 ?>
